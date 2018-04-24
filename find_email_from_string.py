@@ -2,7 +2,10 @@
 import re
 
 #creating string includding email
-text = 'My name is ravi siswaliya. r@yahoo.com my email id is example@gmail.com'
+text = 'My name@ravi is ravi siswaliya. r@yahoo.com my email id is example@gmail.com'
 
-t = re.findall('\S+@\S+', text)
-print(t)
+
+def find_email(string):
+    return re.findall('\S+@\S+\.\S+', string)
+
+print(find_email(text))
