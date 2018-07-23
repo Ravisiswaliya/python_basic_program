@@ -1,21 +1,22 @@
 class Student:
+    total_std = 0
 
-	pr_rise = 1.05
+    def __init__(self, first, last, marks):
+        self.first = first
+        self.last = last
+        self.email = (first + last).lower() + "@gmail.com"
+        self.marks = marks
+        Student.total_std = Student.total_std+1
 
-	def __init__(self,first,last,email,marks):
-		self.first = first
-		self.last = last
-		self.email = (first+last).lower()+"@gmail.com"
-		self.marks = marks
-	
-	def fullname(self):
-		return self.first+' '+self.last
-
+    def fullname(self):
+        return self.first + ' ' + self.last
 
 
-s = Student('Ravi','Siswaliya','ravi@gmail.com',80)
+
+
+s = Student('Ravi', 'Siswaliya', 80)
 print(s.first)
 print(s.email)
 print(s.marks)
-print(s.fullname()) #this is method 
-
+print(s.fullname()) #this is method
+print(Student.total_std)
