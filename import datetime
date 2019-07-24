@@ -1,0 +1,2 @@
+import datetime                                                        
+print (datetime.timedelta(6*365/6) - datetime.date.today()).isoformat()
