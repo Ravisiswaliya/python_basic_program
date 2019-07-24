@@ -1,3 +1,5 @@
+#palindrome function in python
+
 def palindrom(a):
     b = ''
     for i in a:
@@ -8,6 +10,7 @@ def palindrom(a):
         print('No')
 a = 'hello'
 palindrom(a)
+
 
 b='mlm'
 palindrom(b)
